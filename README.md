@@ -15,10 +15,10 @@ The showcased metrics offer a holistic perspective on the security stance of the
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
 ## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
+![Architecture Diagram](https://i.imgur.com/FtjTT1g.png)
 
 ## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+![Architecture Diagram](https://i.imgur.com/tWedVBQ.png)
 
 The architecture of the mini honeynet in Azure consists of the following components:
 
@@ -36,23 +36,23 @@ In the "AFTER" metrics assessment, Network Security Groups underwent fortificati
 
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/oH4Xej5.png)<br>
+![Linux Syslog Auth Failures](https://i.imgur.com/c2KbH2A.png)<br>
+![Windows RDP/SMB Auth Failures](https://i.imgur.com/esMgryr.png)<br>
 
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+Start Time 2024-01-27T02:37:14.7683908Z
+Stop Time 2023-03-11T21:03:08.1360519Z
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
-| SecurityAlert            | 10
-| SecurityIncident         | 348
-| AzureNetworkAnalytics_CL | 843
+| SecurityEvent            | 18380
+| Syslog                   | 13314
+| SecurityAlert            | 6
+| SecurityIncident         | 334
+| AzureNetworkAnalytics_CL | 58501
 
 ## Attack Maps Before Hardening / Security Controls
 
@@ -61,14 +61,14 @@ Stop Time 2023-03-16 17:04:29
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we applied security controls:
-Start Time 2023-03-18 15:37
-Stop Time	2023-03-19 15:37
+Start Time 2024-02-07T02:31:10.4920242Z
+Stop Time	2024-02-08T02:31:10.4920242Z
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 8778
-| Syslog                   | 25
-| SecurityAlert            | 0
+| SecurityEvent            | 9590
+| Syslog                   | 0
+| SecurityAlert            | 1
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
 
